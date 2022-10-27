@@ -10,9 +10,11 @@ spec:
         spec:
           containers:
             - name: vinted-notifier
-              image: registry.gitlab.com/airklizz/vinted-notifier:latest-arm64
+              image: registry.gitlab.com/airklizz/vinted-notifier:v0.2
               imagePullPolicy: IfNotPresent
               envFrom:
                 - secretRef:
                     name: slack-bot-token
+              env:
+                SELENIUM_URL: http://selenium
           restartPolicy: Never

@@ -3,4 +3,6 @@ kind: Kustomization
 namespace: {{index . "namespace"}}
 resources:
   - secret.yaml
+  - selenium-depl.yaml
+  - selenium-svc.yaml
   - cronjob.yaml
