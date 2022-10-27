@@ -16,5 +16,7 @@ spec:
                 - secretRef:
                     name: slack-bot-token
               env:
-                SELENIUM_URL: http://selenium
+              env:
+                - name: SELENIUM_URL
+                  value: "http://selenium"
           restartPolicy: Never
