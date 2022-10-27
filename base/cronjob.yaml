@@ -10,7 +10,7 @@ spec:
         spec:
           containers:
             - name: vinted-notifier
-              image: registry.gitlab.com/airklizz/vinted-notifier:v0.1
+              image: registry.gitlab.com/airklizz/vinted-notifier:latest-arm64
               imagePullPolicy: IfNotPresent
               envFrom:
                 - secretRef:
