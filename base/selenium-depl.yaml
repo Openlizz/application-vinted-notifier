@@ -15,5 +15,5 @@ spec:
         app: selenium
     spec:
       containers:
-        - image: seleniarm/standalone-chromium:latest
+        - image: seleniarm/standalone-firefox:latest
           name: standalone-chromium
